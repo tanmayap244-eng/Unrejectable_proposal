@@ -1,0 +1,63 @@
+body{
+    background-image:url("Background(1).png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    text-align:center;
+    }
+    
+.GIF{
+    background-color:White;
+    display:inline-block;
+}
+
+.GIF img{
+    display:block;
+}
+
+.font-controller{
+    font-size:50px;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    color:#C2185B;
+    font-weight:Bold;
+    }
+    
+    
+.btn{
+    background-color:#FF5FA2 ;
+    color:white;
+    height:100px;
+    width:500px;
+    border-radius:50px;
+    font-size:50px;
+    font-weight:Bold ;
+    text-shadow: 2px 2px 5px pink;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    
+}
+
+.emoji-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* clicks pass through */
+  overflow: hidden;
+  z-index: 999;
+}
+
+.emoji-rain span {
+  position: absolute;
+  top: -50px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
