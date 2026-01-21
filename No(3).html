@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>No(3)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <br><br><br>
+    <div class="GIF">
+    <img src="https://media.tenor.com/qqRoBpnjOrIAAAAi/tkthao219-bubududu.gif" alt="GIF(4)" height="900px">
+    </div>
+    <br><br>
+    <div class="font-controller">
+    <h1> Haan kehdo na yr 💫</h1>
+    </div>
+    <br><br><br>
+       <a href="Yes(1).html">
+           <button class="btn">Yes</button>
+       </a>
+       <br><br><br><br>
+     <button class="btn" id="noBtn">No</button>
+     
+     
+     
+     <script>
+const noBtn = document.getElementById("noBtn");
+
+noBtn.style.position = "absolute";
+
+noBtn.addEventListener("click", () => {
+    const padding = 20;
+
+    const maxX = window.innerWidth - noBtn.offsetWidth - padding;
+    const maxY = window.innerHeight - noBtn.offsetHeight - padding;
+
+    const randomX = Math.random() * maxX;
+    const randomY = Math.random() * maxY;
+
+    noBtn.style.left = randomX + "px";
+    noBtn.style.top = randomY + "px";
+});
+</script>    
+
+
+
+    
+</body>
+</html>
