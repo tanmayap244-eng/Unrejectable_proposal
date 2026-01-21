@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yes(1)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div class="GIF">
+    <img src="https://media.tenor.com/vcoBWHMAoiMAAAAi/kaiyi.gif" alt="GIF(4)" height="900px">
+    </div>
+     <div class="font-controller">
+    <h1>I knew it 🤧✨</h1>
+    </div>
+    
+    <div class="emoji-rain"></div>
+
+<script>
+const emojis = ["💖","💗","✨","🥰","😍","💘","🌸"];
+const container = document.querySelector(".emoji-rain");
+
+function createEmoji() {
+  const emoji = document.createElement("span");
+  emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+  emoji.style.left = Math.random() * 100 + "vw";
+  emoji.style.animationDuration = (3 + Math.random() * 3) + "s";
+  emoji.style.fontSize = (40 + Math.random() * 50) + "px";
+
+  container.appendChild(emoji);
+
+  setTimeout(() => {
+    emoji.remove();
+  }, 6000);
+}
+
+setInterval(createEmoji, 80);
+</script>
+    
+    
+</body>
+</html>
